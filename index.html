@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/121243d983.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Python Developer</p>
+                <h1>Hi, I'm <span>Mohsan</span><br>From Pakistan</h1>
+            </div>
+           
+        </div>
+    </div>
+
+<!----------------about----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Greetings! I'm Mohsan, a tech enthusiast from Pakistan currently pursuing a Master's in Computer Science (Conversion) at the University of Law, London. 
+                        Armed with a Bachelor's degree in Electronics, I bring a blend of skills to the table, including proficiency in Python, front-end development, and basic 
+                        graphic design. My journey is fueled by a passion for leveraging technology to solve real-world challenges. I believe in the power of continuous learning, 
+                        always seeking to expand my horizons in the dynamic realm of tech. Let's connect and explore the endless possibilities at the intersection of electronics, 
+                        computer science, and design. Looking forward to sharing my journey with you! </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python Programming </span><br>Deep Learning, Machine Learning</li>
+                                <li><span>Front-End Development </span><br>Web app Development HTML, CSS, Javascript</li>
+                                <li><span>Graphic Desingning </span><br>Poster Design, Logo design, Adobe Photoshop & illustator</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Sep 2022 - Apr 2023</span><br>Python Developer Internship at Startup in Islamabad Pakistan</li>
+                                <li><span>Sep 2021 - Aug 2022</span><br>Reseacher at Quaid i Azam University Comsip LAB</li>
+                                <li><span>Nov 2021 - Dec 2021</span><br>Graphic Desiging training at Club in Ghotki</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023 - present</span><br>Master of Computer Science(Conversion) <br> from University of Law London</li>
+                                <li><span>2022</span><br>Bachelor of Science in Electronics <br> from Quaid i Azam University, Islamabad</li>
+                                <li><span>2017</span><br>Intermediate (Science) <br> from Cadet College, Ghotki</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------------------------------Services---------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Python Development</h2>
+                    <p>My core lies in the Python Programming, I can build command line applications, simple CNN,
+                         and some basis of machine learning libraies I can work with.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <!---<i class="fa-solid fa-crop-simple"></i>-->
+                    <h2>Website Design</h2>
+                    <p>The traditional web development using HTML, CSS, Javascript, I am goog at 
+                        it can deisgn website using the front-end development</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Graphic Design</h2>
+                    <p>For the this service I can design poster, boucher, bussiness card, or logo design, or 
+                        any design using Adobe suits tool. </p>
+                        <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-----------------------------------portfolio-------------------------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Travel List Generator</h3>
+                    <p>The Application developed using python and a command line application 
+                        for generating the travel list and save in execel sheet.</p>
+                        <a href="https://github.com/Mosu1025/Travel-List-Generator-CLI"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Task Management</h3>
+                    <p>The simple CLI application in Python to to handle task management easy 
+                        by adding or deleting and also modifing task.</p>
+                        <a href="https://github.com/Mosu1025/Task-Management-System"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Hand written Text Reconitation</h3>
+                    <p>The project developed for text to speech converstion in which a written input 
+                        image is feed it process and extract and translate to speech.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+ <!-----------------------------------contact-------------------------------------->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sharmohsan@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+44 7459108614</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mohsinali.mohsinali.50951"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © All Right Reserved <i class="fa-solid fa-heart"></i> by Mohsan</p>
+    </div>
+ </div>
+
+
+
+<!-----------------------------Javascript------------------------------------------>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
